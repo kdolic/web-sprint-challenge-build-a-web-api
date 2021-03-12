@@ -147,6 +147,17 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 - We use Node.js to write server code, web services that communicate with clients using JSON format for data interchange. Express is a light & unopinionated framework that sits on top of Node, making it easier to create web applications & services
 
 1. Understand and explain the use of Middleware.
+
+- Middleware connects/add features. There is 3 types, Built-In, Third-Party, and Custom middleware. Built-in is included in Express. We tell Express about the middleware we want to utilize within the application by calling .use() method on our server. Third-party are downloaded via npm modules, and imported into our application (morgan, helmet, cors are popular ones). Custom middleware we write to perform a specific task for our needs and takes 3/4 arguments and we add it into the middleware queue.
+
 1. The basic principles of the REST architectural style.
+
+- Everything is a resource. Each resource is accessible via a unique URL. Resources can have multiple representation. Communcation happens over stateless protocol(HTTP). Resource management happens via HTTP methods..There are 6 contstraints including, client-side architecture, stateless architecture, code on demand, cachable, etc.
+
 1. Understand and explain the use of Express Routers.
+
+- When web applications grow, number of resources & routes will follow. It is for separation of concerns and make the server routes clean for readability and structure.
+
 1. Describe tooling used to manually test the correctness of an API.
+
+- Postman is a tools used for manually testing the correctness of an API. It allows full control when making requests. Allows user to change HTTP method easily, add JSON data to the body, add form data, add headers, examine the response, and many more options/features
